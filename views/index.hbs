@@ -1,0 +1,18 @@
+<h1>
+  Wellcome to the homepage</h1>
+<section class="campus latest">
+  <h2>Latest Campus</h2>
+  {{>campus latestCampus}}
+</section>
+<section class="campuses all">
+  <h2>All campuses</h2>
+  {{#each allCampuses}}
+  <div class="campus">
+    {{>campus this}}
+  </div>
+  {{/each}}
+</section>
+<section class="campus upcoming">
+  <h2>Upcoming Campus</h2>
+  {{> campus upcomingCampus}}
+</section>
